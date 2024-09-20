@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/af9db066e22
 CODE = (environ.get('CODE', 'https://telegra.ph/file/044e29c96899f670d9c6c.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'ziplinker.net'))
-STREAM_API = (environ.get('STREAM_API', 'edad27b3c1e52fa0b8ce835b2c7af9fe3ceba76b'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'Modijiurl.com'))
+STREAM_API = (environ.get('STREAM_API', '5cea668b2db78a81b7f25fff01110735058d9918'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Howto_openthislink/8'))
 
 # Admins, Channels & Users
