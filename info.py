@@ -29,9 +29,9 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/af9db066e22
 CODE = (environ.get('CODE', 'https://telegra.ph/file/044e29c96899f670d9c6c.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'Modijiurl.com'))
-STREAM_API = (environ.get('STREAM_API', '5cea668b2db78a81b7f25fff01110735058d9918'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Howto_openthislink/8'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'linkshortify.com'))
+STREAM_API = (environ.get('STREAM_API', 'bb81ed34534259e4f0dbc2d770ee3836d0f10e1d'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Howto_openthislink/10'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -56,11 +56,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
-HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/Howto_openthislink/8') # How to open tutorial link for verification
+HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/Howto_openthislink/10') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'edad27b3c1e52fa0b8ce835b2c7af9fe3ceba76b')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'linkshortify.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'bb81ed34534259e4f0dbc2d770ee3836d0f10e1d')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -68,7 +68,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/SH_OTT')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/SHProSearchbot')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Howto_openthislink/8') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Howto_openthislink/10') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : SHPʀᴏSᴇᴀʀᴄʜʙᴏᴛ')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '')) #Log channel id ( make sure bot is admin )
