@@ -1,12 +1,8 @@
 FROM python:3.10.8-slim-buster
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+# Switch repositories to the Debian Archive for EOL Buster
+RUN sed -i s/deb.debian.org/archive.debian.org/g /etc/apt/sources.list && \
+    sed -i s/security.debian.org/archive.debian.org/g /etc/apt/sources.list && \
+    sed -i '/buster-updates/d' /etc/apt/sources.list
 
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /TheMovieProviderBot
-WORKDIR /TheMovieProviderBot
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+RUN apt-get update && apt-get upgrade -y
